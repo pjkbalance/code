@@ -14,8 +14,8 @@ public class VarArgs {
     }
 
     public static void main(String[] args) {
-        printArray(new Object[] {new Integer(123), new Float(3.1415)});
-        printArray(new Object[] {"one", "two"});
-        printArray(new Object[] {new ClassTest(), new ClassTest()});
+        printArray(new Object[]{new Integer(123), new Float(3.1415)});
+        printArray(new Object[]{"one", "two"});
+        printArray(new Object[]{new ClassTest(), new ClassTest()});
     }
 }

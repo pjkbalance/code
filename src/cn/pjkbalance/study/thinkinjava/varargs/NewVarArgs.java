@@ -13,6 +13,7 @@ public class NewVarArgs {
         }
         System.out.println();
     }
+
     //static void printArray(Object... objArray, ClassTest classTest) {
     static void printArray(ClassTest classTest, Object... objArray) {
         System.out.println("===== print classTest & array =====");
@@ -25,14 +26,14 @@ public class NewVarArgs {
 
     public static void main(String[] args) {
         printArray(123, 3.1415);
-        printArray(new Object[] {new Integer(123), new Float(3.1415)});
+        printArray(new Object[]{new Integer(123), new Float(3.1415)});
         System.out.println();
         printArray("one", "two");
-        printArray(new Object[] {"one", "two"});
+        printArray(new Object[]{"one", "two"});
         System.out.println();
         printArray(new ClassTest(), new ClassTest());
-        printArray(new Object[] {new ClassTest(), new ClassTest()});
+        printArray(new Object[]{new ClassTest(), new ClassTest()});
         System.out.println();
-        printArray(new ClassTest(),"one", "two");
+        printArray(new ClassTest(), "one", "two");
     }
 }

@@ -15,7 +15,8 @@ public class Cupboard {
     }
 
     void f(int marker) {
-        System.out.println("Cupboard.f("+marker+")");
+        System.out.println("Cupboard.f(" + marker + ")");
     }
+
     static Bowl bowl5 = new Bowl(5);
 }

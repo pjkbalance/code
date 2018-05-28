@@ -5,8 +5,16 @@ import cn.pjkbalance.common.util.Print;
 /**
  * Created by jiakang on 2018/5/24.
  */
-public class Wind extends Instrument{
+public class Wind extends Instrument {
     public void play(Note n) {
-        Print.print("wind.play "+n);
+        Print.print("wind play " + n);
+    }
+
+    String what() {
+        return "Wind";
+    }
+
+    void adjust() {
+        Print.print("adjust wind");
     }
 }

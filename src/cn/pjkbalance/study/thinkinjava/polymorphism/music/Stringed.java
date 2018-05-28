@@ -8,6 +8,16 @@ import cn.pjkbalance.common.util.Print;
 public class Stringed extends Instrument {
     @Override
     public void play(Note n) {
-        Print.print("Stringed play "+n);
+        Print.print("Stringed play " + n);
+    }
+
+    @Override
+    String what() {
+        return "stringed";
+    }
+
+    @Override
+    void adjust() {
+        Print.print("adjust stringed");
     }
 }
