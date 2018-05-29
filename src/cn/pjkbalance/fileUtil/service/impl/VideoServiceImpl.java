@@ -26,6 +26,7 @@ public class VideoServiceImpl implements FileNameService {
         }
     };
 
+    @Override
     public void formatName(SystemEnum system, String... pathStrs) {
         String path = FileUtil.getPath(system, pathStrs);
         Print.print("video change name: "+path);

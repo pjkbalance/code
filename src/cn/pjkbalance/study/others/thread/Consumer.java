@@ -10,7 +10,8 @@ public class Consumer implements Runnable{
     }
     @Override
     public void run() {
-        while (true)
-        resource.consumer();
+        while (true) {
+            resource.consumer();
+        }
     }
 }

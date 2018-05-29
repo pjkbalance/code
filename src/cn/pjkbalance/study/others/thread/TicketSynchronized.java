@@ -12,6 +12,7 @@ public class TicketSynchronized implements Runnable {    //设置总票数为100
     //由于在测试类中new了一次，所以值存在一个，被三个售票窗口共享
     private static Integer ticket = 100;
 
+    @Override
     public void run() {
         //模拟售票
         while (true) {

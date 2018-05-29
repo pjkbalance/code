@@ -58,6 +58,7 @@ class Animal extends LivingCreature {
         Print.print("create Animal");
     }
 
+    @Override
     protected void dispose() {
         Print.print("dispose animal");
         d.disponse();
@@ -91,6 +92,7 @@ public class Frog extends Amphibian {
         Print.print("create Frog");
     }
 
+    @Override
     protected void dispose() {
         Print.print("dispose Frog");
         d.disponse();

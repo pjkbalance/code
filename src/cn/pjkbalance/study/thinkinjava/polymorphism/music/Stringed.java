@@ -5,19 +5,19 @@ import cn.pjkbalance.common.util.Print;
 /**
  * Created by jiakang on 2018/5/24.
  */
-public class Stringed extends Instrument {
+public class Stringed implements Instrument {
     @Override
     public void play(Note n) {
         Print.print("Stringed play " + n);
     }
 
     @Override
-    String what() {
+    public String what() {
         return "stringed";
     }
 
     @Override
-    void adjust() {
+    public void adjust() {
         Print.print("adjust stringed");
     }
 }

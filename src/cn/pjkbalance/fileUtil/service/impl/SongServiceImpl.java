@@ -36,6 +36,7 @@ public class SongServiceImpl implements FileNameService {
         }
     };
 
+    @Override
     public void formatName(SystemEnum system, String... pathStrs) {
         String path = FileUtil.getPath(system, pathStrs);
         String transferFilePath = path+File.separator+"transfer";

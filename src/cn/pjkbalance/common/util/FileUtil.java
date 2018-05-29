@@ -15,8 +15,9 @@ public class FileUtil {
         StringBuffer sb = new StringBuffer("");
         for (int index = 0; index < strs.length; index++) {
             sb.append(strs[index].trim());
-            if (index < strs.length - 1)
+            if (index < strs.length - 1) {
                 sb.append(File.separator);
+            }
         }
         String result = sb.toString();
         Print.print("FileUtil.getWindowsPath result: "+result);
@@ -25,8 +26,9 @@ public class FileUtil {
 
     public static String getLinuxPath(String... strs) {
         StringBuffer sb = new StringBuffer("");
-        for (int index = 0; index < strs.length; index++)
+        for (int index = 0; index < strs.length; index++) {
             sb.append(File.separator + strs[index].trim());
+        }
         String result = sb.toString();
         Print.print("FileUtil.getLinux result: "+result);
         return result;
@@ -35,7 +37,9 @@ public class FileUtil {
 
     public static String getPath(SystemEnum systemType, String... strs) {
         String path = "";
-        if(strs.length <= 0) return path;
+        if(strs.length <= 0) {
+            return path;
+        }
         switch (systemType) {
             case WINDOWS:
                 path = getWindowsPath(strs);
@@ -61,8 +65,9 @@ public class FileUtil {
         //获取子文件，若子文件为目录，则获取子文件下的文件名
         File[] subFiles = file.listFiles();
         for (File subFile : subFiles) {
-            if (subFile.isDirectory())
+            if (subFile.isDirectory()) {
                 result.putAll(getAllFileNames(subFile.getPath()));
+            }
         }
         return result;
     }

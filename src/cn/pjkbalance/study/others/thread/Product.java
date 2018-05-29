@@ -12,7 +12,8 @@ public class Product implements Runnable {
 
     @Override
     public void run() {
-        while (true)
-        resource.product("duck");
+        while (true) {
+            resource.product("duck");
+        }
     }
 }

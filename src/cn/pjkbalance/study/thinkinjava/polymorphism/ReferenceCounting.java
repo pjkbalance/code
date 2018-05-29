@@ -19,9 +19,12 @@ class Shared {
     }
 
     protected void dispose() {
-        if (--refcount == 0) Print.print("dispose Shared-" + this);
+        if (--refcount == 0) {
+            Print.print("dispose Shared-" + this);
+        }
     }
 
+    @Override
     public String toString() {
         return "Shared-" + id;
     }
@@ -43,6 +46,7 @@ class Composing {
         shared.dispose();
     }
 
+    @Override
     public String toString() {
         return "composing-" + id;
     }
