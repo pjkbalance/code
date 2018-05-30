@@ -12,7 +12,7 @@ public class Brass extends Wind {
     }
 
     @Override
-    void adjust() {
+    public void adjust() {
         Print.print("adjust brass");
     }
 }
