@@ -5,7 +5,7 @@ import cn.pjkbalance.common.util.Print;
 /**
  * Created by jiakang on 2018/5/31.
  */
-public class Parcell {
+public class ParcelF {
     class Contents {
         private int i = 1;
         public int value() {return i;}
@@ -26,7 +26,7 @@ public class Parcell {
     }
 
     public static void main(String... args){
-        Parcell p = new Parcell();
+        ParcelF p = new ParcelF();
         p.ship("Tasmania");
     }
 }
