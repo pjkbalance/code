@@ -1,5 +1,17 @@
 .idea/
-.out/
+*/.idea/
+
+lib/
+*/lib/
+out/
+*/out
+
+*.jar
+*/*.jar
+*.zip
+*/*.zip
+*.iml
+*/*.iml
 
 # Compiled class file
 *.class
